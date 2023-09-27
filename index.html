@@ -23,34 +23,35 @@
   </head>
   <body>
     <div class="app">
-      <header
-        class="fixed top-0 flex justify-between items-center w-full h-[96px] pr-[2%] pl-[6%] text-black text-[14px] font-medium z-[69]"
-      >
-        <div class="flex items-center w-[30%]">
-          <img
-            src="/assets/images/logo.png"
-            alt=""
-            class="logo w-[50px] mr-5"
-          />
-          <div class="search-input">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" class="w-full pl-4" />
+      <header class="fixed top-0 w-full z-[71]">
+        <div
+          class="container h-[96px] flex justify-between items-center text-white text-[14px] font-medium"
+        >
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <img
+                src="/assets/images/logo.png"
+                alt=""
+                class="logo w-[69px] mr-5"
+              />
+              <p class="logo-text">PET TAG</p>
+            </div>
+            <i
+              id="mobile-bar"
+              class="fa-solid fa-bars mobile-btn hidden"
+              onclick="handleBarClick()"
+            ></i>
           </div>
-          <i
-            id="mobile-bar"
-            class="fa-solid fa-bars mobile-btn hidden"
-            onclick="handleBarClick()"
-          ></i>
-        </div>
-        <div class="header-menu flex items-center">
-          <ul class="flex">
-            <li>About</li>
-            <li>Sản Phẩm</li>
-            <li>Hướng Dẫn</li>
-            <li>Chính Sách</li>
-          </ul>
-          <button class="login-btn">Đăng Nhập</button
-          ><button class="shop-btn">Shop Now</button>
+          <div class="header-menu flex items-center">
+            <ul class="flex">
+              <li>Giới Thiệu</li>
+              <li>Sản Phẩm</li>
+              <li>Hướng Dẫn</li>
+              <li>Hợp tác</li>
+            </ul>
+            <button class="login-btn">Đăng Nhập</button
+            ><button class="shop-btn">Shop Now</button>
+          </div>
         </div>
       </header>
       <div
@@ -60,7 +61,7 @@
       ></div>
       <div
         id="mobile-menu"
-        class="hidden w-[50%] h-[100vh] py-5 fixed top-0 right-0 bg-[#33323F] text-[#eee] z-[70]"
+        class="hidden w-[50%] h-[100vh] py-5 fixed top-0 right-0 bg-[#33323F] text-[#eee] z-[99]"
       >
         <div class="px-3 mb-5 flex justify-between items-center">
           <img src="/assets/images/logo.png" alt="" /><i
@@ -114,169 +115,144 @@
           >
         </ul>
       </div>
-      <main>
-        <div
-          class="banner relative flex justify-between items-center pl-[7%] mb-[70px]"
-        >
-          <div class="banner-content w-[42%]">
-            <p class="mb-3 text-[38px] font-bold hiddenLeft">
-              ID-Pet Tag <br />
-              Thẻ định danh thú cưng
-            </p>
-            <p
-              class="banner-desc mb-[80px] text-[#1F1D2B] font-medium hiddenLeft"
-            >
-              là thiết bị đeo cổ thú cưng được tích hợp chip NFC bên trong cùng
-              với công nghệ độc quyền của IDConnect để định danh thú cưng. Người
-              khác chỉ cần đưa điện thoại tới gần thiết bị này là sẽ truy xuất
-              được thông tin về thú cưng nhanh chóng & chính xác nhất.
-            </p>
-            <div class="banner-btn hiddenLeft">
-              <button class="explore-btn"><p>Explore</p></button
-              ><button class="shop-btn px-[50px] py-[10px]">Create</button>
+      <main class="pt-[96px]">
+        <div class="container">
+          <div class="banner">
+            <div class="banner-content">
+              <div class="banner-logo">
+                <img
+                  src="/assets/images/banner-logo.png"
+                  alt=""
+                  class="banner__logo--img"
+                />
+                <p class="banner__logo--text">ID-PET TAG</p>
+              </div>
+              <p class="banner-title">Thẻ định danh thú cưng</p>
+              <p class="banner-desc">
+                Là thiết bị đeo cổ thú cưng được tích hợp chip NFC bên trong
+                cùng với công nghệ độc quyền của IDConnect để định danh thú
+                cưng. Người khác chỉ cần đưa điện thoại tới gần thiết bị này là
+                sẽ truy xuất được thông tin về thú cưng nhanh chóng & chính xác
+                nhất.
+              </p>
             </div>
-          </div>
-          <div class="banner-img w-[48%]">
             <img
-              src="/assets/images/banner-img2.png"
+              src="/assets/images/banner-img.png"
               alt=""
-              class="w-full hiddenRight"
+              class="banner-img"
             />
+          </div>
+          <div class="intro">
+            <div class="intro-heading">
+              <p class="intro-text">GIỚI THIỆU</p>
+              <p class="intro-title">VỀ ID-PET TAG</p>
+            </div>
+            <p class="intro-content">
+              Nhận thấy rất nhiều trường hợp người đi đường muốn tìm giúp chủ
+              cho thú cưng bị đi lạc vì nhiều nguyên nhân khách quan họ không
+              thể liên hệ được vì không có thông tin, một số trường hợp khác vì
+              chất liệu quá kém mà hư hỏng (thấm nước hoặc bụi bẩn) hoặc chi phí
+              quá đắt đỏ và đó là lý do thẻ định danh thú cưng ID-Pet ra đời.
+              <br />
+              Thẻ cũng có nhiều lựa chọn về màu sắc, chất liệu, kiểu dáng phù
+              hợp với mọi nhu cầu của khách hàng.
+            </p>
+          </div>
+          <div class="solution">
+            <div class="solution-content">
+              <p class="solution-title">
+                Chuyện gì xảy ra nếu thú cưng của bạn bị lạc?
+              </p>
+              <p class="solution-sub">
+                Đừng lo lắng, chúng tôi đem đến giải pháp
+              </p>
+              <p class="solution-desc">
+                Một giải pháp mới dành cho thú cưng của bạn!<br />Bảng tên nhỏ
+                nhắn này được gắn vào vòng đeo cổ chó/mèo của bạn và có thể được
+                tìm được danh tính của chúng bằng chạm điện thoại hoặc quét mã
+                QR có sẵn trên thẻ tên của chúng. Vì vậy, khi bạn bắt gặp một
+                con vật cưng đi lạc, bạn có thể thấy trên hồ sơ kỹ thuật số của
+                chúng là thông tin về chủ sở hữu.
+              </p>
+            </div>
             <img
-              src="/assets/images/banner-ellipse.png"
+              src="/assets/images/solution-img.png"
               alt=""
-              class="banner-ellipse absolute top-0 right-0 z-[-1]"
+              class="solution-img"
             />
           </div>
         </div>
 
-        <div class="intro relative px-[6%] pb-[3%]">
-          <img
-            src="/assets/images/intro-ellipse.png"
-            alt=""
-            class="absolute top-[-70%] left-0 w-[100%] z-[-1]"
-          />
-          <div class="intro-heading flex justify-between mb-8">
-            <div class="w-[43%] hiddenLeft">
-              <p class="text-[28px] font-bold leading-7">GIỚI THIỆU</p>
-              <p class="flex items-center text-[30px] font-light">
-                VỀ ID-PET TAG
-                <img
-                  src="/assets/images/intro-arrow.png"
-                  alt=""
-                  class="w-[35%] ml-10"
-                />
-              </p>
-            </div>
-            <div class="w-[57%] text-[18px] leading-6 text-justify hiddenRight">
-              <p class="mb-2">
-                Nhận thấy rất nhiều trường hợp người đi đường muốn tìm giúp chủ
-                cho thú cưng bị đi lạc vì nhiều nguyên nhân khách quan họ không
-                thể liên hệ được vì không có thông tin, một số trường hợp khác
-                vì chất liệu quá kém mà hư hỏng (thấm nước hoặc bụi bẩn) hoặc
-                chi phí quá đắt đỏ và đó là lý do thẻ định danh thú cưng ID-Pet
-                ra đời.
-              </p>
-              <p>
-                Thẻ cũng có nhiều lựa chọn về màu sắc, chất liệu, kiểu dáng phù
-                hợp với mọi nhu cầu của khách hàng.
-              </p>
-            </div>
-          </div>
-          <div class="intro-content text-center">
-            <p class="mb-5 text-[20px] font-bold leading-7 hiddenLeft">
-              Chuyện gì xảy ra <br />
-              nếu thú cưng của bạn bị lạc ?
-            </p>
-            <img
-              src="/assets/images/intro.png"
-              alt=""
-              class="w-[180px] mx-auto mb-5 hiddenLeft"
-            />
-            <p class="intro-whp mb-3 text-[#1F1D2B] font-bold hiddenLeft">
-              Đừng lo lắng, chúng tôi đem đến giải pháp
-            </p>
-            <p class="intro-solution text-[20px] font-bold hiddenLeft">
-              Một giải pháp mới dành cho thú cưng của bạn
-            </p>
-            <p class="intro-desc w-[82%] mx-auto font-medium hiddenLeft">
-              Bảng tên nhỏ nhắn này được gắn vào vòng đeo cổ chó/mèo của bạn và
-              có thể được tìm được danh tính của chúng bằng chạm điện thoại hoặc
-              quét mã QR có sẵn trên thẻ tên của chúng.<br />
-              Vì vậy, khi bạn bắt gặp một con vật cưng đi lạc, bạn có thể thấy
-              trên hồ sơ kỹ thuật số của chúng là thông tin về chủ sở hữu.
-            </p>
-          </div>
-        </div>
-        <div class="features p-10">
-          <span class="features-title hiddenLeft">TÍNH NĂNG CHÍNH</span><br />
-          <span class="features-desc hiddenLeft">(HOẠT ĐỘNG TOÀN CẦU)</span>
-          <div class="feature-list grid grid-cols-3 gap-5">
-            <div class="hiddenRight">
-              <div>
-                <img src="/assets/images/feature1.png" alt="" /><span
-                  >Owner info</span
-                >
+        <div class="features">
+          <div class="container">
+            <span class="features-title hiddenLeft">TÍNH NĂNG CHÍNH</span><br />
+            <div class="feature-list grid grid-cols-3 gap-5">
+              <div class="hiddenRight">
+                <div>
+                  <img src="/assets/images/feature1.png" alt="" /><span
+                    >Owner info</span
+                  >
+                </div>
+                <p>
+                  Cài đặt số điện thoại thông tin của bạn và thú cưng, chỉnh sửa
+                  mọi lúc mọi nơi dễ dàng.
+                </p>
               </div>
-              <p>
-                Cài đặt số điện thoại thông tin của bạn và thú cưng, chỉnh sửa
-                mọi lúc mọi nơi dễ dàng.
-              </p>
-            </div>
-            <div class="hiddenRight">
-              <div>
-                <img src="/assets/images/feature2.png" alt="" /><span
-                  >Real-Time</span
-                >
+              <div class="hiddenRight">
+                <div>
+                  <img src="/assets/images/feature2.png" alt="" /><span
+                    >Real-Time</span
+                  >
+                </div>
+                <p>
+                  Hồ sơ trực tuyến. cập nhật ngay lập tức (theo thời gian thực)
+                  ngay khi bạn sửa thông tin
+                </p>
               </div>
-              <p>
-                Hồ sơ trực tuyến. cập nhật ngay lập tức (theo thời gian thực)
-                ngay khi bạn sửa thông tin
-              </p>
-            </div>
-            <div class="hiddenRight">
-              <div>
-                <img src="/assets/images/feature3.png" alt="" /><span
-                  >Security</span
-                >
+              <div class="hiddenRight">
+                <div>
+                  <img src="/assets/images/feature3.png" alt="" /><span
+                    >Security</span
+                  >
+                </div>
+                <p>
+                  Dễ sử dụng, Tuỳ chọn bảo mật, khoá thẻ từ xa hoặc chỉnh sửa,
+                  ẩn thông tin mà bạn muốn
+                </p>
               </div>
-              <p>
-                Dễ sử dụng, Tuỳ chọn bảo mật, khoá thẻ từ xa hoặc chỉnh sửa, ẩn
-                thông tin mà bạn muốn
-              </p>
-            </div>
-            <div class="hiddenRight">
-              <div>
-                <img src="/assets/images/feature4.png" alt="" /><span
-                  >Social</span
-                >
+              <div class="hiddenRight">
+                <div>
+                  <img src="/assets/images/feature4.png" alt="" /><span
+                    >Social</span
+                  >
+                </div>
+                <p>
+                  Kết bạn, chia sẻ mạng xã hội khi đi dạo cùng thú cưng của bạn,
+                  tại sao không ?
+                </p>
               </div>
-              <p>
-                Kết bạn, chia sẻ mạng xã hội khi đi dạo cùng thú cưng của bạn,
-                tại sao không ?
-              </p>
-            </div>
-            <div class="hiddenRight">
-              <div>
-                <img src="/assets/images/feature5.png" alt="" /><span
-                  >Photos</span
-                >
+              <div class="hiddenRight">
+                <div>
+                  <img src="/assets/images/feature5.png" alt="" /><span
+                    >Photos</span
+                  >
+                </div>
+                <p>
+                  Upload hình ảnh tiêm phòng, vaccine và cả những tấm ảnh đẹp
+                  nhất của bạn và thú cưng
+                </p>
               </div>
-              <p>
-                Upload hình ảnh tiêm phòng, vaccine và cả những tấm ảnh đẹp nhất
-                của bạn và thú cưng
-              </p>
-            </div>
-            <div class="hiddenRight">
-              <div>
-                <img src="/assets/images/feature6.png" alt="" /><span
-                  >Saving</span
-                >
+              <div class="hiddenRight">
+                <div>
+                  <img src="/assets/images/feature6.png" alt="" /><span
+                    >Saving</span
+                  >
+                </div>
+                <p>
+                  MIỄN PHÍ trọn đời, không có phí kích hoạt ẩn, chi phí giống
+                  như các thẻ thông thường.
+                </p>
               </div>
-              <p>
-                MIỄN PHÍ trọn đời, không có phí kích hoạt ẩn, chi phí giống như
-                các thẻ thông thường.
-              </p>
             </div>
           </div>
         </div>
@@ -361,7 +337,9 @@
               <img src="/assets/images/size2.png" alt="" class="hiddenLeft" />
             </div>
             <div class="size-content w-[45%]">
-              <p class="w-[70%] mb-7 text-[30px] font-medium leading-10 hiddenRight">
+              <p
+                class="w-[70%] mb-7 text-[30px] font-medium leading-10 hiddenRight"
+              >
                 Kích thước nhỏ gọn, độ nhạy cao, thao tác rất dễ dàng
               </p>
               <p
