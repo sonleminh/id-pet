@@ -80,8 +80,8 @@ header button {
   position: relative;
   margin-left: 40px;
   border: 5px;
-  background: #F6F5FF;
-  color: #423DFF;
+  background: #f6f5ff;
+  color: #423dff;
   font-weight: 700;
   border: 1px solid transparent;
   border-radius: 30px;
@@ -90,10 +90,10 @@ header button {
 
 .shop-btn {
   margin-left: 20px;
-  color: #423EFF;
+  color: #423eff;
   font-weight: 700;
   border-radius: 30px;
-  border: 1px solid #423EFF;
+  border: 1px solid #423eff;
 }
 
 .banner {
@@ -184,7 +184,7 @@ header button {
 
 .intro-content {
   width: 60%;
-  color: #4543FD;
+  color: #4543fd;
   font-size: 18px;
 }
 
@@ -243,7 +243,7 @@ header button {
 .features-heading {
   color: #111111;
   font-size: 48px;
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .features-desc {
@@ -256,7 +256,7 @@ header button {
 
 .feature-list > div {
   padding: 25px;
-  background: rgb(255, 255, 255,03);
+  background: rgb(255, 255, 255, 03);
   text-align: start;
   border-radius: 20px;
 }
@@ -277,9 +277,8 @@ header button {
 }
 
 .tech-content {
-  width: 50%;
+  width: 57%;
 }
-
 .tech-list {
   position: relative;
   border-radius: 10px;
@@ -309,6 +308,10 @@ header button {
 .tech-list > div > div p:last-child {
   font-size: 14px;
   font-weight: 400;
+}
+
+.tech-img {
+  width: 43%;
 }
 
 .size {
@@ -347,7 +350,7 @@ header button {
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
-.need-heading{
+.need-heading {
   margin-bottom: 20px;
   font-size: 36px;
   font-weight: 700;
@@ -384,19 +387,20 @@ header button {
   font-weight: 800;
 }
 
-.how-list>div {
+.how-list > div {
   text-align: center;
 }
 
-.how-list>div > div {
+.how-list > div > div {
   padding: 20px;
 }
 
-.how-list>div>img {
+.how-list > div > img {
   width: 100%;
 }
 
 .how-label {
+  height: 55px;
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 800;
@@ -408,7 +412,7 @@ header button {
   width: 60%;
   padding: 4px;
   margin: 0 auto 50px;
-  background: #433EFF;
+  background: #433eff;
   border-radius: 40px;
 }
 
@@ -426,7 +430,7 @@ header button {
 
 .sale-desc {
   margin-bottom: 25px;
-    color: #FFEA29;
+  color: #ffea29;
 }
 
 .sale-desc span {
@@ -435,8 +439,8 @@ header button {
 
 .sale-btn {
   padding: 10px 40px;
-  color: #FFEA29;
-  border: 1px solid #FFEA29;
+  color: #ffea29;
+  border: 1px solid #ffea29;
   border-radius: 30px;
   font-weight: 500;
   font-size: 20px;
@@ -490,17 +494,19 @@ header button {
 }
 
 .question {
-  background: #01031B;
+  background: #01031b;
 }
 
-.question>b {
-  background: linear-gradient(to right,
-      #ffb5b5,
-      #ffb6d5,
-      #d3b1ff,
-      #b3e8ff,
-      #b0ffde,
-      #d2ffa5);
+.question > b {
+  background: linear-gradient(
+    to right,
+    #ffb5b5,
+    #ffb6d5,
+    #d3b1ff,
+    #b3e8ff,
+    #b0ffde,
+    #d2ffa5
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
@@ -526,7 +532,7 @@ header button {
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
-  background: #0E1026;
+  background: #0e1026;
   font-weight: 400;
   font-size: 18px;
   cursor: pointer;
@@ -570,33 +576,37 @@ input:checked ~ .tab-content {
 }
 
 footer {
-  background: #01031B;
+  background: #01031b;
   color: #fff;
 }
 
-.footer-top>div:first-child {
+.footer-top > div:first-child {
   padding-right: 50px;
   text-align: justify;
 }
 
-.footer-top>div:first-child,
-.footer-top>div:nth-child(2) {
+.footer-top > div:first-child,
+.footer-top > div:nth-child(2) {
   border-right: 2px solid transparent;
-  border-image: linear-gradient(rgb(255, 255, 255, 0),
-      rgb(255, 255, 255, 1),
-      rgb(255, 255, 255, 0));
+  border-image: linear-gradient(
+    rgb(255, 255, 255, 0),
+    rgb(255, 255, 255, 1),
+    rgb(255, 255, 255, 0)
+  );
   border-image-slice: 1;
 }
 
-.footer-group>div:first-child {
+.footer-group > div:first-child {
   border-right: 2px solid transparent;
-  border-image: linear-gradient(rgb(255, 255, 255, 0),
-      rgb(255, 255, 255, 1),
-      rgb(255, 255, 255, 0));
+  border-image: linear-gradient(
+    rgb(255, 255, 255, 0),
+    rgb(255, 255, 255, 1),
+    rgb(255, 255, 255, 0)
+  );
   border-image-slice: 1;
 }
 
-.footer-top>div ul li {
+.footer-top > div ul li {
   margin-bottom: 10px;
 }
 
@@ -645,7 +655,7 @@ footer {
 @keyframes fadeInLeft {
   0% {
     transform: translate3d(-50%, 0, 0);
-    /* opacity: 0; */
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -655,7 +665,7 @@ footer {
 
 @keyframes fadeInRight {
   0% {
-    /* opacity: 0; */
+    opacity: 0;
     transform: translate3d(50%, 0, 0);
   }
   100% {
